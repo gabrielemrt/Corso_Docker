@@ -1,16 +1,15 @@
 version: "1.0"
 services:
+  #Creazione container database
   db:
     image: mysql
     deploy:
       replicas: 2
+  #Creazione container server
   server:
-    #build: .
     image: webserver
     build:
-      context: WEB.html
-      dockerfile: ./server/Dockerfile
+      context: ./server
+      dockerfile: Dockerfile
     ports:
       - "80:80"
-    #volumes:
-    #  - $pwd:/var/www/html
