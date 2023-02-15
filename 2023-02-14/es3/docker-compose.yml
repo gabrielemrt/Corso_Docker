@@ -1,0 +1,16 @@
+version: "1.0"
+services:
+  db:
+    image: mysql
+    deploy:
+      replicas: 2
+  server:
+    #build: .
+    image: webserver
+    build:
+      context: WEB.html
+      dockerfile: ./server/Dockerfile
+    ports:
+      - "80:80"
+    #volumes:
+    #  - $pwd:/var/www/html
