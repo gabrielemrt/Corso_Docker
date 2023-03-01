@@ -1,0 +1,25 @@
+
+services:
+  servizio1:
+    image: nginx:alpine
+    ports: 
+      - "8080:80"
+    networks:
+      - network1
+
+  servizio2:
+    image: nginx:alpine
+    networks:
+      - network2
+
+  servizio3:
+    image: nginx:alpine
+    networks:
+      - network1
+      - network2
+
+
+networks:
+  network1:
+    external: true
+  network2:
