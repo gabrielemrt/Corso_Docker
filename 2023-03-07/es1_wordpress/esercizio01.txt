@@ -1,0 +1,1 @@
+Creare un servizio WordPress che funzioni con un database. 

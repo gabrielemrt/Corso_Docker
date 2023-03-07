@@ -1,0 +1,7 @@
+Tramite nginx-proxy creare un servizio, che indirizzi ai vari container creati in precedenza senza dover puntare la porta, 
+ma ad esempio, puntare l'indirizzo "http://docker.local".
+
+Per fare ciò oltre al docker-compose bisongerà modificare il file host con il comando:
+sudo nano /etc/hosts
+
+ed aggiungere il comando: '127.0.0.1 portainer.local'
