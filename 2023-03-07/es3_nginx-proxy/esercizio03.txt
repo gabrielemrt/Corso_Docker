@@ -1,7 +1,19 @@
-Tramite nginx-proxy creare un servizio, che indirizzi ai vari container creati in precedenza senza dover puntare la porta, 
-ma ad esempio, puntare l'indirizzo "http://docker.local".
+Consegna esercizio finale:
+Definire uno stack con nginx-proxy per avere più applicazioni che rispondono a URL diversi e non a porte diverse del proprio host.
+In particolare creare uno stack per ognuna di questa applicazioni: 
+* wordpress
+* drupal
+* joomla
+* portainer
+Come secondo step, creare 2 applicativi wordpress con 2 url diversi (ad esempio sito1.local e sito2.local)
+
+################################################################################################################################
 
 Per fare ciò oltre al docker-compose bisongerà modificare il file host con il comando:
 sudo nano /etc/hosts
 
-ed aggiungere il comando: '127.0.0.1 portainer.local'
+ed aggiungere il comando: 
+    127.0.0.1 wordpress.local
+    127.0.0.1 drupal.local
+    127.0.0.1 joomla.local
+    127.0.0.1 portainer.local
