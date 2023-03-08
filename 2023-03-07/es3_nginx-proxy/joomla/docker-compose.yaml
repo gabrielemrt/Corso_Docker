@@ -11,9 +11,6 @@ services:
     environment:
      - JOOMLA_DB_HOST=mysql:3306
      - JOOMLA_DB_PASSWORD=12345678
-
-     - VIRTUAL_HOST=joomla.local
-     - VIRTUAL_PORT=81
     volumes:
      - ./code:/var/www/html
   

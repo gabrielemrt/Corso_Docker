@@ -17,3 +17,4 @@ ed aggiungere il comando:
     127.0.0.1 drupal.local
     127.0.0.1 joomla.local
     127.0.0.1 portainer.local
+    
